@@ -37,7 +37,8 @@ const startServer = async () => {
             console.log(`Server is running on port ${PORT}`);
         });
     } catch (error) {
-        console.error('Server start nahi hua:', error);
+        console.error('Server start nahi hua:', error?.message || error);
+        // exit with non-zero so platform marks it as failed
         process.exit(1);
     }
 };
