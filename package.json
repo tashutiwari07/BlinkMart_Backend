@@ -7,15 +7,15 @@
   "type": "commonjs",
   "main": "Server.js",
   "scripts": {
-       "start": "node Server.js",
-        "test": "echo \"Error: no test specified\" && exit 1"
-
+    "start": "node Server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "cors": "^2.8.6",
     "dotenv": "^16.4.0",
     "express": "^5.2.1",
     "mysql2": "^3.22.5",
+    "razorpay": "^2.9.6",
     "sequelize": "^6.37.8"
   }
 }
